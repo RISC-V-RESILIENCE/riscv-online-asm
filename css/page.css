@@ -67,6 +67,16 @@ pre.code-res code {
     max-height: 300px;
     overflow:  auto;
 }
+.result-grid {
+    margin-top: 10px;
+}
+.result-grid .col pre.code {
+    margin: 10px 0;
+}
+.result-grid .col pre.code-res code {
+    min-height: 80px;
+    max-height: 250px;
+}
 #content {
     display: none;
 }

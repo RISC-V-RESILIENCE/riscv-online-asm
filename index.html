@@ -12,7 +12,7 @@
     <script type="text/javascript" src="js/gas.js"></script>
     <title>Online RISC-V Assembler</title>
     <!-- Global -->
-    <link rel="canonical" href="https://riscvasm.lucasteske.dev/">
+    <link rel="canonical" href="http://risc-v-resilience.github.io/riscv-online-asm">
     <meta name="author" property="author" content="Lucas Teske">
     <meta name="description" property="description" content="RISC-V Online Assembler">
 
@@ -20,8 +20,8 @@
     <meta name="og:locale" property="og:locale" content="en">
     <meta name="og:type" property="og:type" content="article">
     <meta name="og:title" property="og:title" content="RISC-V Online Assembler">
-    <meta name="og:url" property="og:url" content="https://riscvasm.lucasteske.dev/">
-    <meta name="og:image" property="og:image" content="https://riscvasm.lucasteske.dev/riscv-logo.png">
+    <meta name="og:url" property="og:url" content="http://risc-v-resilience.github.io/riscv-online-asm">
+    <meta name="og:image" property="og:image" content="http://risc-v-resilience.github.io/riscv-online-asm/riscv-logo.png">
     <meta name="og:site_name" property="og:site_name" content="RISC-V Online Assembler">
     <meta name="og:description" property="og:description" content="RISC-V Online Assembler. This is a very crude online assembler for RISC-V assembly (all variants that gas supports)">
 
@@ -31,11 +31,11 @@
     <meta name="twitter:site" property="twitter:site" content="@lucasteske">
     <meta name="twitter:creator" property="twitter:creator" content="@lucasteske">
     <meta name="twitter:description" property="twitter:description" content="RISC-V Online Assembler. This is a very crude online assembler for RISC-V assembly (all variants that gas supports)">
-    <meta name="twitter:image" property="twitter:image" content="https://riscvasm.lucasteske.dev/riscv-logo.png">
+    <meta name="twitter:image" property="twitter:image" content="http://risc-v-resilience.github.io/riscv-online-asm">
     <meta name="twitter:image:alt" property="twitter:image:alt" content="RISC-V Foundation Logo">
 </head>
 <body>
-    <a class="github-fork-ribbon" href="https://github.com/racerxdl/riscv-online-asm" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
+    <a class="github-fork-ribbon" href="https://github.com/RISC-V-resilience/riscv-online-asm" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
     <nav class="light-blue lighten-1" role="navigation">
         <div class="nav-wrapper container">
             <a href="#" class="brand-logo">RISC-V Online Assembler</a>
@@ -138,16 +138,20 @@ variable:
             </div>
             <pre class="code code-res"><label>Console</label><code id="output">Waiting for build</code></pre>
             <div class="divider"></div>
-            <p>
-                <pre class="code code-res"><label>Code<BR/>Hex Dump</label><code id="binaryBox">Waiting for build</code></pre>
-                <div class="divider"></div>
-                <pre class="code code-res"><label>Data<BR/>Hex Dump</label><code id="binaryDataBox">Waiting for build</code></pre>
-                <div class="divider"></div>
-                <pre class="code code-res"><label>Objdump Code<BR/>Disassembly</label><code id="objDumpBox">Waiting for build</code></pre>
-                <div class="divider"></div>
-                <pre class="code code-res"><label>Objdump<BR/>Full Hex</label><code id="objDumpFullBox">Waiting for build</code></pre>
-                <div class="divider"></div>
-            </p>
+            <div class="row result-grid">
+                <div class="col s12 m6">
+                    <pre class="code code-res"><label>Code<BR/>Hex Dump</label><code id="binaryBox">Waiting for build</code></pre>
+                </div>
+                <div class="col s12 m6">
+                    <pre class="code code-res"><label>Data<BR/>Hex Dump</label><code id="binaryDataBox">Waiting for build</code></pre>
+                </div>
+                <div class="col s12 m6">
+                    <pre class="code code-res"><label>Objdump Code<BR/>Disassembly</label><code id="objDumpBox">Waiting for build</code></pre>
+                </div>
+                <div class="col s12 m6">
+                    <pre class="code code-res"><label>Objdump<BR/>Full Hex</label><code id="objDumpFullBox">Waiting for build</code></pre>
+                </div>
+            </div>
           </div>
         </div>
     </div>
@@ -192,5 +196,27 @@ variable:
     <!-- Cloudflare Web Analytics -->
     <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "6fdff3f05d2847b58d553381bb1e8115"}'></script>
     <!-- End Cloudflare Web Analytics -->
+
+    <footer class="page-footer light-blue lighten-1">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <p class="white-text" style="font-size:14px;">
+                        Este projeto é um <em>fork</em> do trabalho original de
+                        <strong><a class="white-text text-lighten-3" href="https://github.com/racerxdl/riscv-online-asm" target="_blank" rel="noopener">Lucas Teske</a></strong>.
+                        O objetivo deste fork é ampliar a documentação, enriquecer as referências a material didático
+                        e aplicar a padronização conforme o padrão do projeto
+                        <strong><a class="white-text text-lighten-3" href="https://github.com/carlosdelfino/RISC-V-Resilience-Workspace" target="_blank" rel="noopener">RISC-V Resilience</a></strong>.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container white-text" style="font-size:12px;">
+                Fork mantido por <a class="white-text text-lighten-3" href="https://github.com/carlosdelfino" target="_blank" rel="noopener">Carlos Delfino</a>
+                &mdash; Projeto original &copy; <a class="white-text text-lighten-3" href="https://github.com/racerxdl" target="_blank" rel="noopener">Lucas Teske (racerxdl)</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
